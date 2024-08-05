@@ -1,0 +1,38 @@
+<!-- 
+Author: Jhayvee Arai, 000899156
+Date: November 20, 2023 
+-->
+<!-- 
+    In this assignment 4, I created a game that uses SVG and Javascript.  The game is a simple 2D popping balloon where the user must click/pop the randomize balloon on the screen on the given timer. The highest number of balloon pops wins.
+    
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="head-container">
+        <h1>Pop it</h1>
+        <h3>Pop the balloons as many as you can before your time runs out!!!</h3>
+    </div>	
+    <div class="score-container">
+        <p class="counter">
+            Timer: <span id="timer">00.0</span>s
+            YOUR SCORE: <span id="score-board">0</span>
+        </p>
+    </div>
+    <svg id="game-board" width="700" height="400" viewbox="0,0,1000,1000" preserveAspectRatio="none">
+        <rect x="0" y="400" width="700" height="400"/>
+    </svg>
+    <footer>&copy; Copyright 2023 - Jhayvee Arai, 000899156 - Mohawk College</footer>
+</body>
+
+</html>
+
+<script src="script.js"></script>

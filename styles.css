@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  background-color: rgb(0, 139, 72);
+  font-family: 'Courier New', monospace;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.counter {
+  fill: lightYellow;
+  font-size: 30px;
+}
+.head-container {
+  font-size: 20px;
+  color: rgb(86, 86, 16);
+  text-anchor: middle;
+  font-size: 100%;
+}
+
+.score-container, #timer {
+    color: rgb(216, 193, 19);
+    font-size: 30pt;
+}
+#timer {
+  color: rgb(19, 216, 35);
+}
+
+#game-board {
+    border:2px solid rgb(70, 188, 227); 
+    margin:10px; background-color:rgb(79, 4, 4);
+    border-radius:20px;
+    cursor: pointer;
+}
+
+.game-over #score-board {
+  font-size: 200%;
+  animation: flash-color 0.5s 16 alternate;
+}
+.clicked {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+@keyframes flash-color {
+  to { color: #52da20; }
+}
+.game-over .clickable { 
+  fill: black; 
+}
+.game-over .clicked {
+  opacity: 1.5;
+  filter: drop-shadow(0 0 3px #F0E68C);
+}
+
+footer {
+    border-top: 3px double rgb(6, 0, 0); 
+    padding:4px; 
+    margin-top:10px; 
+    color:rgb(16, 1, 1);
+    font-size:10pt
+}
